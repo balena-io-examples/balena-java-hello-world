@@ -1,7 +1,7 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
 RUN sudo apt-get update
-Run sudo apt-get install oracle-java7-jdk
+Run sudo apt-get install oracle-java8-jdk
 
 ADD . /App
 

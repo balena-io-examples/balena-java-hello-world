@@ -1,10 +1,13 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
-RUN sudo apt-get update
-RUN apt-get install -y software-properties-common
-RUN sudo apt-get update
-RUN echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | sudo /usr/bin/debconf-set-selections
-RUN apt-get install -y oracle-java8-installer
+RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' > /etc/apt/sources.list.d/
+ADD http://archive.raspberrypi.org/debian/raspberrypi.gog.key /root/raspberrypi.gpg.key
+RUN apt-key add /root.raspberrypi.gpg.key
+RUN apt-get update
+RUN apt-get -y upgrade
+RUN echo oracle-java7-jdk shared/accepted-oracle-license-v1-1 select true| /usr/bin/debconf-set-selections
+RUN apt-get -y install oracle-java7-jdk 
+RUN apt-get clean
 
 ADD . /App
 

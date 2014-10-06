@@ -10,7 +10,7 @@ RUN sudo apt-get install -y software-properties-common
 RUN sudo add-apt-repository ppa:webupd8team/java
 RUN sudo apt-get update
 
-RUN sudo apt-get install oracle-java6-installer
+RUN sudo apt-get install oracle-java8-installer
 
 ADD . /App
 

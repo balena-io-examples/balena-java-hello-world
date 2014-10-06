@@ -1,8 +1,8 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
 RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' >> /etc/apt/sources.list.d/raspi.list
-RUN wget http://archive.raspberrypi.org/debian/raspberrypi.gog.key
-RUN apt-key add raspberrypi.gpg.key
+ADD ./raspberrypi.gpg.key /key
+RUN apt-key add /key/raspberrypi.gpg.key
 RUN apt-get update
 RUN apt-get -y upgrade
 RUN echo oracle-java7-jdk shared/accepted-oracle-license-v1-1 select true| /usr/bin/debconf-set-selections

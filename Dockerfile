@@ -5,7 +5,7 @@ RUN sudo apt-get update
 #RUN sudo apt-get update
 #RUN sudo apt-get install --force-yes -y oracle-java8-jdk
 
-RUN sudo apt-get install python-software-properties
+RUN sudo apt-get install software-properties-common
 RUN sudo add-apt-repository ppa:webupd8team/java
 RUN sudo apt-get update
 

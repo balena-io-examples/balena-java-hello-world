@@ -8,8 +8,8 @@ RUN sudo apt-get update
 RUN sudo apt-get remove install-info
 RUN sudo apt-get clean
 RUN sudo apt-get update
-RUN sudo apt-get -y upgrade
-RUN sudo apt-get install dpkg--configure--pending -f -y openjdk-6-jdk
+RUN sudo apt-get -y -f upgrade
+RUN sudo apt-get install -f -y openjdk-6-jdk
 
 ADD . /App
 

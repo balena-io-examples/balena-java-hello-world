@@ -14,6 +14,6 @@ ADD . /App
 #build java file
 CMD ["javac", 'App/Hello.java']
 
-RUN echo mono App/Hello.exe >/start
+RUN echo java App/Hello.exe >/start
 RUN chmod +x /start
  

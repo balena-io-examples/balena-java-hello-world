@@ -8,7 +8,7 @@ RUN sudo apt-get update
 RUN sudo apt-get remove install-info
 RUN sudo apt-get clean
 RUN sudo apt-get update
-RUN sudo apt-get upgrade
+RUN sudo apt-get -y upgrade
 RUN sudo apt-get install -y openjdk-6-jdk
 
 ADD . /App

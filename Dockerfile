@@ -1,6 +1,6 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
-RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' > /etc/apt/sources.list.d/
+RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' >> /etc/apt/sources.list.d/
 ADD http://archive.raspberrypi.org/debian/raspberrypi.gog.key /root/raspberrypi.gpg.key
 RUN apt-key add /root.raspberrypi.gpg.key
 RUN apt-get update

@@ -5,8 +5,8 @@ RUN sudo apt-get update
 #RUN sudo apt-get update
 #RUN sudo apt-get install --force-yes -y oracle-java7-jdk
 
-RUN sudo apt-get install openjdk-7-jre
-RUN sudo apt-get install openjdk-7-jdk
+RUN sudo apt-get install -y openjdk-7-jre
+RUN sudo apt-get install -y openjdk-7-jdk
 
 ADD . /App
 

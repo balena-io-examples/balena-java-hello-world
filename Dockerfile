@@ -5,7 +5,7 @@ RUN sudo apt-get update
 #RUN sudo apt-get update
 #RUN sudo apt-get install --force-yes -y oracle-java8-jdk
 
-RUN sudo apt-get install openjdk-6-jdk
+RUN sudo apt-get install -y openjdk-6-jdk
 
 ADD . /App
 

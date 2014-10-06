@@ -1,7 +1,7 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
 RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' >> /etc/apt/sources.list.d/raspi.list
-ADD ./raspberrypi.gpg.key /key
+ADD ./raspberrypi.gpg.key /key/
 RUN apt-key add /key/raspberrypi.gpg.key
 RUN apt-get update
 RUN apt-get -y upgrade

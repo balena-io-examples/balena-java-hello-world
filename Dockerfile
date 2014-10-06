@@ -1,8 +1,8 @@
 FROM resin/rpi-buildstep-armv6hf:latest
 
 RUN sudo apt-get update
-RUN sudo apt-get install openjdk-7-jre
-RUN sudo apt-get install openjdk-7-jdk
+RUN sudo apt-get install -y openjdk-7-jre
+RUN sudo apt-get install -y openjdk-7-jdk
 
 ADD . /App
 

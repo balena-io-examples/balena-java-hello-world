@@ -12,7 +12,7 @@ RUN apt-get clean
 ADD . /App
 
 #build java file
-RUN javac App/Hello.java
+CMD ["javac", 'App/Hello.java']
 
 RUN echo mono App/Hello.exe >/start
 RUN chmod +x /start

@@ -14,6 +14,7 @@ ADD . /App
 #build java file
 CMD ["javac", "/App/Hello.java"]
 
-RUN echo 'java -cp . /App/Hello' >/start
-RUN chmod +x /start
+CMD ["java", "/App/Hello"]
+#RUN echo 'java -cp /App Hello' >/start
+#RUN chmod +x /start
  

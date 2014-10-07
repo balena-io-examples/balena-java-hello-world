@@ -13,7 +13,7 @@ ADD . /App
 
 #build java file
 WORKDIR /App
-Run javac Hello.java
+Run ["javac", "Hello.java"]
 
 RUN echo 'java -cp . Hello' >/start
 RUN chmod +x /start

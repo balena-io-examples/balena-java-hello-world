@@ -11,11 +11,9 @@ RUN apt-get clean
 
 ADD . /App
 
-RUN ["java", "-version"]
-
 #build java file
-RUN ["javac", "/App/Hello.java"]
+CMD ["javac", "/App/Hello.java"]
 
-RUN echo java App/Hello >/start
+RUN echo java  App/Hello >/start
 RUN chmod +x /start
  

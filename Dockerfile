@@ -12,9 +12,9 @@ RUN apt-get clean
 ADD . /App
 
 #build java file
-CMD ["javac", "/App/Hello.java"]
+WORKDIR /App
+CMD ["javac", "Hello.java"]
 
-CMD ["java", "/App/Hello"]
-#RUN echo 'java -cp /App Hello' >/start
-#RUN chmod +x /start
+RUN echo java Hello >/start
+RUN chmod +x /start
  

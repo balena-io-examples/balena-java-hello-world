@@ -13,6 +13,8 @@ This is a very simple project as an example for using java on raspberry.
 
 You can build and deploy your code on Raspberry Pi. Other JDK versions are also supported.
 
+* You can use command CMD ["javac","<sourcefile>"] to build the java source separately but with current raspbian image this command is not supported.
+
 ## Parts
 
 The recipe for this project is as follows:

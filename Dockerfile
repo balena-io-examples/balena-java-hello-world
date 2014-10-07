@@ -11,7 +11,6 @@ RUN apt-get clean
 
 ADD . /App/
 
-#build java file
 WORKDIR /App
 
 RUN echo 'javac Hello.java && java -cp . Hello' >/start

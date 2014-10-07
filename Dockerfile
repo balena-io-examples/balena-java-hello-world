@@ -9,11 +9,12 @@ RUN echo oracle-java7-jdk shared/accepted-oracle-license-v1-1 select true| /usr/
 RUN apt-get -y install oracle-java7-jdk 
 RUN apt-get clean
 
-ADD . /App
+ADD . /App/
 
 #build java file
 WORKDIR /App
-Run ["javac", "Hello.java"]
+CMD ["javac", "Hello.java"]
+RUN ls
 
 RUN echo 'java -cp . Hello' >/start
 RUN chmod +x /start

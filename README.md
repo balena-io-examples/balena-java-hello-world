@@ -31,7 +31,7 @@ The recipe for this project is as follows:
 1. After about 10 minutes your new device should show up on the resin.io applications dashboard.
 1. Setup an empty application. 
 
-1. you can now clone down the hello.NET folder:
+1. you can now clone down the hello.Java folder:
 
 `$ git clone https://github.com/nghiant2710/Hello-Java.git`
 

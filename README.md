@@ -1,6 +1,6 @@
 #Hello Java in Resin.io
 
-##Notice:
+## Introduction
 
 This project installs Oracle JDK 7 (JRE7 included) which allows you to execute Java applications on [Resin.io](http://resin.io).
 

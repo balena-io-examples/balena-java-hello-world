@@ -19,9 +19,9 @@ The recipe for this project is as follows:
 ### Resin.io Setup & Deployment
 
 1. If you haven't got a [Resin.io](http://resin.io) alpha account, visit [alpha.resin.io](http://alpha.resin.io) and sign up.
-1. Start a new applicaton on [Resin.io](http://resin.io), name it as you want, download the .zip file, format the SD card in FAT32 and extract it to your SD card. 
+1. Start a new applicaton on [Resin.io](http://resin.io) download the .zip file, format the SD card in FAT32 and extract it to your SD card. 
 1. Insert the SD card into the Raspberry Pi, power it up using the micro-usb cable and connect to the Internet.
-1. After about 10 minutes your new device should show up on the [Resin.io](http://resin.io) applications dashboard.
+1. After about 10 minutes your new device should show up on your application dashboard.
 1. You can now clone the Hello.Java repo:
 
 `$ git clone https://github.com/nghiant2710/Hello-Java.git`

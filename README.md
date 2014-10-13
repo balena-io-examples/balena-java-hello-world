@@ -1,4 +1,4 @@
-#A barebones resin.io project to demonstrate running java code
+#Hello Java in Resin.io
 
 ##Notice:
 

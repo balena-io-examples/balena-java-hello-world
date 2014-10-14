@@ -6,7 +6,7 @@ This project installs Oracle JDK 7 (JRE7 included) which allows you to execute J
 
 This is a very simple project that is an example of how to run Java code on a Raspberry Pi. 
 
-You can build and deploy your code on the Raspberry Pi. Other JDK versions are also supported.
+You can build and deploy your code on the Raspberry Pi. Other JDK versions are also supported. When you install Java from these, it assumes acceptance of the [Oracle license](http://www.oracle.com/technetwork/java/javase/terms/thirdpartyreadme/java-license-366168.html)
 
 * You can use command CMD ["javac", "sourceFile"] to build the java source separately but with current raspbian image this command is not supported.
 

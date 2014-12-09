@@ -13,6 +13,6 @@ ADD . /App/
 
 WORKDIR /App
 
-RUN echo 'javac Hello.java && java -cp . Hello' >/start
-RUN chmod +x /start
+RUN javac Hello.java
+CMD ["java", "-cp", ".", "Hello"]
  

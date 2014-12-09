@@ -10,9 +10,7 @@ RUN apt-get -y install oracle-java7-jdk
 RUN apt-get clean
 
 ADD . /App/
+RUN mv /App/run.sh /run.sh
 
-WORKDIR /App
-
-RUN javac Hello.java
-CMD ["java", "-cp", ".", "Hello"]
+CMD ["/bin/bash", "-ex", "run.sh"]
  

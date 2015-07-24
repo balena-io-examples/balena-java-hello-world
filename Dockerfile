@@ -9,7 +9,7 @@ RUN echo oracle-java8-jdk shared/accepted-oracle-license-v1-1 select true | /usr
 RUN apt-get -y install oracle-java8-jdk
 RUN apt-get clean
 
-ADD . /App/
-RUN mv /App/run.sh /run.sh
+ADD . /app/
+RUN mv /app/run.sh /run.sh
 
 CMD ["/bin/bash", "-ex", "run.sh"]

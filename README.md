@@ -2,9 +2,9 @@
 
 ## Introduction
 
-This project installs Oracle JDK 7 (JRE7 included) which allows you to execute Java applications on [Resin.io](http://resin.io).
+This project installs Oracle JDK 8 (JRE8 included) which allows you to execute Java applications on [Resin.io](http://resin.io).
 
-This is a very simple project that is an example of how to run Java code on a Raspberry Pi. 
+This is a very simple project that is an example of how to run Java code on a Raspberry Pi.
 
 You can build and deploy your code on the Raspberry Pi. Other JDK versions are also supported. When you install Java from these, it assumes acceptance of the [Oracle license](http://www.oracle.com/technetwork/java/javase/terms/thirdpartyreadme/java-license-366168.html)
 
@@ -19,7 +19,7 @@ The recipe for this project is as follows:
 ### Resin.io Setup & Deployment
 
 1. If you haven't got a [Resin.io](http://resin.io) alpha account, visit [alpha.resin.io](http://alpha.resin.io) and sign up.
-1. Start a new applicaton on [Resin.io](http://resin.io) download the .zip file, format the SD card in FAT32 and extract it to your SD card. 
+1. Start a new applicaton on [Resin.io](http://resin.io) download the .zip file, format the SD card in FAT32 and extract it to your SD card.
 1. Insert the SD card into the Raspberry Pi, power it up using the micro-usb cable and connect to the Internet.
 1. After about 10 minutes your new device should show up on your application dashboard.
 1. You can now clone the Hello.Java repo:

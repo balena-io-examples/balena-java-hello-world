@@ -10,6 +10,7 @@ RUN apt-get -y install oracle-java8-jdk
 RUN apt-get clean
 
 ADD . /app/
+RUN javac /app/Hello.java
 RUN mv /app/run.sh /run.sh
 
 CMD ["/bin/bash", "-ex", "run.sh"]

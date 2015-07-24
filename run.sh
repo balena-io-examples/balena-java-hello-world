@@ -1,5 +1,4 @@
 #!/bin/bash
 
-cd /App
-javac Hello.java
+cd /usr/src/app
 java -cp . Hello

@@ -1,16 +1,15 @@
 FROM resin/rpi-raspbian:wheezy
 
-RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' >> /etc/apt/sources.list.d/raspi.list
-ADD ./raspberrypi.gpg.key /key/
-RUN apt-key add /key/raspberrypi.gpg.key
-RUN apt-get update
-RUN apt-get -y upgrade
-RUN echo oracle-java7-jdk shared/accepted-oracle-license-v1-1 select true| /usr/bin/debconf-set-selections
-RUN apt-get -y install oracle-java7-jdk 
-RUN apt-get clean
+COPY raspberrypi.gpg.key /key/
+RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' >> /etc/apt/sources.list.d/raspi.list && \
+    echo oracle-java8-jdk shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \
+    apt-key add /key/raspberrypi.gpg.key
 
-ADD . /App/
-RUN mv /App/run.sh /run.sh
+RUN apt-get update && \
+    apt-get -y install oracle-java8-jdk && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
-CMD ["/bin/bash", "-ex", "run.sh"]
- 
+COPY . /usr/src/app
+
+RUN javac /usr/src/app/Hello.java
+CMD /usr/src/app/run.sh

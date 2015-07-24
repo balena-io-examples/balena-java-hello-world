@@ -11,6 +11,5 @@ RUN apt-get clean
 
 ADD . /app/
 RUN javac /app/Hello.java
-RUN mv /app/run.sh /run.sh
 
-CMD ["/bin/bash", "-ex", "run.sh"]
+CMD /app/run.sh

@@ -1,4 +1,4 @@
 #!/bin/bash
 
-cd /app
+cd /usr/src/app
 java -cp . Hello

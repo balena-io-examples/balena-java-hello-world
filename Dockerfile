@@ -9,7 +9,7 @@ RUN apt-get update && \
     apt-get -y install oracle-java8-jdk && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-COPY . /app/
-RUN javac /app/Hello.java
+COPY . /usr/src/app
 
-CMD /app/run.sh
+RUN javac /usr/src/app/Hello.java
+CMD /usr/src/app/run.sh

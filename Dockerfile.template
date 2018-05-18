@@ -1,4 +1,4 @@
-FROM resin/rpi-raspbian:wheezy
+FROM resin/%%RESIN_MACHINE_NAME%%-node:8
 
 COPY raspberrypi.gpg.key /key/
 RUN echo 'deb http://archive.raspberrypi.org/debian/ wheezy main' >> /etc/apt/sources.list.d/raspi.list && \

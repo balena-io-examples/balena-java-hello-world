@@ -1,0 +1,9 @@
+FROM resin/%%RESIN_MACHINE_NAME%%-openjdk:latest
+
+WORKDIR /usr/src/app
+
+COPY . .
+
+RUN javac Hello.java
+
+CMD ["java", "-cp", ".", "Hello"]

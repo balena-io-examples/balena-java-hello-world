@@ -6,4 +6,6 @@ COPY . .
 
 RUN javac Hello.java
 
+ENV INITSYSTEM=on
+
 CMD ["java", "-cp", ".", "Hello"]

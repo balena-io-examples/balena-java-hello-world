@@ -2,26 +2,19 @@
 
 ## Introduction
 
-This is a very simple project that is an example of how to run Java code on a [balena](https://balena.io) device.
+This is a very simple project that is an example of how to run Java code on a [balena][balena-link] device.
 
-Other Open JDK versions are also supported. You can see them in the [OpenJDK baseimages documentation](https://balena.io/docs/reference/base-images/base-images/#OpenJDK)
+Other Open JDK versions are also supported. You can see them in the [OpenJDK baseimages documentation][open-jdk].
 
 ### balena Setup & Deployment
 
-1. If you haven't got a [balena](https://balena.io) account, visit [dashboard.balena-cloud.com](https://dashboard.balena-cloud.com/signup) and sign up.
-1. Start a new applicaton on [balena](https://balena.io) download the .zip file, format the SD card in FAT32 and extract it to your SD card.
-1. Insert the SD card into the device, power it up using the micro-usb cable and connect to the Internet.
-1. After about 10 minutes your new device should show up on your application dashboard.
-1. You can now clone the Hello.Java repo:
+To get this project up and running, you will need to signup for a balena account [here][signup-page] and set up an application and device. You'll find full details in our [Getting Started tutorial][gettingStarted-link].
 
-`$ git clone https://github.com/balena-projects/Hello-Java.git`
+Once you have downloaded this project, you can `balena push` it using the [balenaCLI][balena-cli]. This command will package up and push the code to the balena builders, where it will be compiled and built and deployed to every device in the application fleet. When it completes, you'll have your Java code running on your device and see some logs on your [balenaCloud dashboard][balena-dashboard].
 
-Then add the balena remote:
-
-`$ git remote add balena git@git.balena-cloud.com:<myUserName>/<myApplicationName>.git`
-
-And finally push the code to your Device:
-
-`$ git push balena master`
-
-Now you can enjoy Java code on [balena](https://balena.io).
+[balena-link]:https://balena.io/
+[open-jdk]:https://balena.io/docs/reference/base-images/base-images/#OpenJDK
+[signup-page]:https://dashboard.balena-cloud.com/signup
+[gettingStarted-link]:http://balena.io/docs/learn/getting-started/
+[balena-cli]:https://www.balena.io/docs/reference/cli/
+[balena-dashboard]:https://dashboard.balena-cloud.com/

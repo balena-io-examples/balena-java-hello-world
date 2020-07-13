@@ -2,6 +2,6 @@ public class Hello
 {
 	public static void main(String[] args)
 	{
-		System.out.println("Hello Resin");
+		System.out.println("Hello Balena");
 	}
 }
